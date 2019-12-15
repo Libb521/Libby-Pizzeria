@@ -571,4 +571,22 @@ $(".delivernot").click(function () {
 $(function () {
     $.scrollify.move('#sum-order');
 });
+
+ //Form Validation
+ $("form.form-group").on('submit', function (event) {
+    event.preventDefault();
+    let name = $("input#name").val();
+    let phone = $("input#phone").val();
+    let location = $("input#location").val();
+
+    if ($("input#name").val() && $("input#phone").val() && $("input#location").val()) {
+        alert("Hey " + name + ", Your order has been received and will be delivered at " + location + ",at Ksh.100 more!")
+        event.allowDefault();
+    } else {
+        alert("Thank you very much for choosing us, enjoy your customized Pizza")
+        event.preventDefault();
+    }
+
+});
+
 });

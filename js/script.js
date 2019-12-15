@@ -541,7 +541,7 @@ $(document).ready(function (){
           
          //Write to the order
         $('.summary').slideDown(2000);
-        $('.cdata-overlay').slideUp();
+        $('.customer-overlay').slideUp();
         $('#list').slideDown();
         $('.deliver').show(1000);
         $('.delivernot').show(1000);
@@ -552,7 +552,7 @@ $(document).ready(function (){
             + newOrder.c + "<br>" + "Toppings :     "
             + newOrder.t + "<br>" + " Number of pizzas :    "
             + newOrder.n + "<br>" + "Total Price :  "
-            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px').hide;
     });
 
  //Deliver
@@ -560,8 +560,15 @@ $(document).ready(function (){
     $('.summary').slideUp();
     $('#list').slideUp();
     $('.summary').text("Provide location details").slideDown();
-    $('.deliver').hide(1000);
-    $('.delivernot').hide(1000);
-    $('.cdata-overlay').slideDown();
+    $('.deliver').show(1000);
+    $('.delivernot').show(1000);
+    $('.customer-overlay').slideDown();
+});
+//Pick Up
+$(".delivernot").click(function () {
+});
+//Scrollify
+$(function () {
+    $.scrollify.move('#sum-order');
 });
 });

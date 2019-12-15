@@ -51,7 +51,7 @@ nav>ul>li>a:hover {
     background: rgb(240, 132, 10);
     }
     .intro{
-        background: #000 url("../img/cheese-close-up-cooking-crispy-263041.jpg");
+        background: #000 url("../img/close-up-photography-of-pizza-1458426.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         /* background-attachment: fixed; */
@@ -77,4 +77,9 @@ nav>ul>li>a:hover {
     .mission {
         font-size: 150%;
     }
-    .card
+    .var{
+        float: left;
+        position: relative;
+        justify-content: space-around;
+        padding-top: 30px;
+    }

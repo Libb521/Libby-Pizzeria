@@ -534,4 +534,8 @@ $(document).ready(function (){
                 break;
 
         }
+
+         //Execute order function
+         let newOrder = order(flavour, size, crust, topping, number, totalPrice);
+         console.log(newOrder); // test func
 });

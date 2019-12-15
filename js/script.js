@@ -537,5 +537,21 @@ $(document).ready(function (){
 
          //Execute order function
          let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-         console.log(newOrder); // test func
+         console.log(newOrder);
+          
+         //Write to the order
+        $('.summary').slideDown(2000);
+        $('.cdata-overlay').slideUp();
+        $('#list').slideDown();
+        $('.deliver').show(1000);
+        $('.delivernot').show(1000);
+
+        $('#list').text(" ");
+        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
+            + newOrder.s + "<br>" + "Crust :     "
+            + newOrder.c + "<br>" + "Toppings :     "
+            + newOrder.t + "<br>" + " Number of pizzas :    "
+            + newOrder.n + "<br>" + "Total Price :  "
+            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+    });
 });

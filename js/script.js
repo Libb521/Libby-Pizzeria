@@ -96,327 +96,441 @@ $(document).ready(function (){
                     case size = "regular":
                         price = 300;
                         if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
                             totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
                         break;
                     case size = "medium":
                         price = 600;
                         if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
                             totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 170;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 190;
+                        } else if (crust === "gluten-free") {
+                            totalPrice = (price * number) + 250;
                         } else {
-                            totalPrice = (price * number) + 280;
+                            totalPrice = (price * number) + 270;
                         }
                         break;
                     case size = "large":
                         price = 1200;
                         if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
                             totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
+                        } else if (crust === "crispy") {
+                            totalPrice = (price * number) + 170;
+                        } else if (crust === "stuffed") {
+                            totalPrice = (price * number) + 190;
+                        } else if (crust === "gluten-free") {
+                            totalPrice = (price * number) + 250;
                         } else {
-                            totalPrice = (price * number) + 280;
+                            totalPrice = (price * number) + 270;
                         }
-                        break;
-                }
                 break;
-            case flavour = "periperi":
-                switch (size) {
-                    case size = "small":
-                    price = 300;
-                    if (crust === "thin") {
-                        totalPrice = (price * number) + 100;
-                    } else if (crust === "thick") {
-                        totalPrice = (price * number) + 150;
-                    } else if (crust === "flatbread") {
-                        totalPrice = (price * number) + 180;
-                    } else {
-                        totalPrice = (price * number) + 280;
                     }
                     break;
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 600;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
+            case flavour = "periperi":
+            switch (size) {
+                case size = "small":
+                price = 350;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
                 }
                 break;
+                case size = "regular":
+                    price = 300;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                    break;
+                case size = "medium":
+                    price = 600;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
+                case size = "large":
+                    price = 1200;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                break;
+            }
+            break;
             case flavour = "bbq":
-                switch (size) {
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 600;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
+            switch (size) {
+                case size = "small":
+                price = 350;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
                 }
                 break;
-            case flavour = "boerewors":
-                switch (size) {
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 600;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
+                case size = "regular":
+                    price = 300;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                    break;
+                case size = "medium":
+                    price = 600;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
+                case size = "large":
+                    price = 1200;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
+                }
+                break;
+            case flavour = "Veggie":
+            switch (size) {
+                case size = "small":
+                price = 350;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                break;
+                case size = "regular":
+                    price = 300;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                    break;
+                case size = "medium":
+                    price = 600;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
+                case size = "large":
+                    price = 1200;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
                 }
                 break;
             case flavour = "hawaiian":
-                switch (size) {
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 600;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
+            switch (size) {
+                case size = "small":
+                price = 350;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                break;
+                case size = "regular":
+                    price = 300;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                    break;
+                case size = "medium":
+                    price = 600;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
+                case size = "large":
+                    price = 1200;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
                 }
                 break;
             case flavour = "mushroom":
-                switch (size) {
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 600;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
+            switch (size) {
+                case size = "small":
+                price = 350;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                break;
+                case size = "regular":
+                    price = 300;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                    break;
+                case size = "medium":
+                    price = 600;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
+                case size = "large":
+                    price = 1200;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
                         break;
                 }
                 break;
-            case flavour = "regina":
-                switch (size) {
-                    case size = "regular":
-                        price = 300;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 600;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "flatbread") {
-                            totalPrice = (price * number) + 180;
-                        } else {
-                            totalPrice = (price * number) + 280;
-                        }
+            case flavour = "pepperoni":
+            switch (size) {
+                case size = "small":
+                price = 350;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                break;
+                case size = "regular":
+                    price = 300;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                } else if (crust === "crispy") {
+                    totalPrice = (price * number) + 170;
+                } else if (crust === "stuffed") {
+                    totalPrice = (price * number) + 190;
+                } else if (crust === "gluten-free") {
+                    totalPrice = (price * number) + 250;
+                } else {
+                    totalPrice = (price * number) + 270;
+                }
+                    break;
+                case size = "medium":
+                    price = 600;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
+                    break;
+                case size = "large":
+                    price = 1200;
+                    if (crust === "thin") {
+                        totalPrice = (price * number) + 150;
+                    } else if (crust === "crispy") {
+                        totalPrice = (price * number) + 170;
+                    } else if (crust === "stuffed") {
+                        totalPrice = (price * number) + 190;
+                    } else if (crust === "gluten-free") {
+                        totalPrice = (price * number) + 250;
+                    } else {
+                        totalPrice = (price * number) + 270;
+                    }
                         break;
                 }
                 break;
         }
         switch (topping) {
             case topping = "tomato":
-                totalPrice = totalPrice + 80;
+                totalPrice = totalPrice + 50;
                 break;
             case topping = "onions":
-                totalPrice = totalPrice + 80;
+                totalPrice = totalPrice + 50;
                 break;
             case topping = "mushroom":
-                totalPrice = totalPrice + 80;
+                totalPrice = totalPrice + 60;
                 break;
             case topping = "greenpepper":
-                totalPrice = totalPrice + 80;
+                totalPrice = totalPrice + 70;
                 break;
             case topping = "olives":
-                totalPrice = totalPrice + 120;
+                totalPrice = totalPrice + 150;
                 break;
             case topping = "pineapple":
-                totalPrice = totalPrice + 120;
+                totalPrice = totalPrice + 70;
                 break;
             case topping = "sweetcorn":
-                totalPrice = totalPrice + 120;
+                totalPrice = totalPrice + 80;
                 break;
-            case topping = "macon":
-                totalPrice = totalPrice + 120;
+            case topping = "bacon":
+                totalPrice = totalPrice + 100;
                 break;
             case topping = "mince":
-                totalPrice = totalPrice + 120;
+                totalPrice = totalPrice + 150;
                 break;
             case topping = "beef":
-                totalPrice = totalPrice + 170;
+                totalPrice = totalPrice + 150;
                 break;
             case topping = "chicken":
-                totalPrice = totalPrice + 170;
+                totalPrice = totalPrice + 100;
                 break;
 
         }

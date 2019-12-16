@@ -16,7 +16,7 @@ To get a local copy of the site:
 
 `Extract` the cloned file.
 
-`cd` to Delani-Studio folder.
+`cd` to Libby Pizzeria folder.
 
 *Launch* `index.html` file.
 

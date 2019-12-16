@@ -18,9 +18,10 @@
     <div class="container-fluid">
         <nav>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Variety</a></li>
-                <li><a href="#">Order</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="variety.html">Variety</a></li>
+                <li><a href="order.html">Order</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
         </nav>
@@ -51,42 +52,204 @@
 
         <h1 class="text-center b-text">VARIETY</h1><br>
         <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <img src="img/sliced-pizza-on-plate-2260208.jpg">
+            <div class="col-sm-3">
+                <div class="card1">
+                    <img src="img/sliced-pizza-on-plate-2260208.jpg" height="30%">
                     <div>
-                        <figcaption class="text-black">SMALL<br>Ksh.350</figcaption>
+                        <figcaption class="text-black" id="size">SMALL<br></figcaption>
                     </div>
+                    <select class="custom-select custom-select-md mb-3 flavour" id="type" required>
+                        <option value="type">select type</option>
+                        <option value="350">Veggie</option>
+                        <option value="350">Chicken Tikka</option>
+                        <option value="400">Peri-Peri Chicken</option>
+                        <option value="370">BBQ Steak</option>
+                        <option value="400">Hawaiian</option>
+                        <option value="350">Chicken and Mushroom</option>
+                        <option value="400">Pepperoni</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="crust" required>
+                        <option value="crust">Select crust</option>
+                        <option value="50">Thin Crust</option>
+                        <option value="100">Crispy Crust</option>
+                        <option value="70">Stuffed Crust</option>
+                        <option value="60">Gluten-free Crust</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                        <option value="topping">select topping</option>
+                        <option value="40">Mushroom</option>
+                        <option value="60">Beef Pepperoni</option>
+                        <option value="80">Periperi Chicken</option>
+                        <option value="40">Green Pepper</option>
+                        <option value="40">Olives</option>
+                        <option value="40">Tomato</option>
+                        <option value="50">Onions</option>
+                        <option value="50">Pineapple</option>
+                        <option value="40">Sweet Corn</option>
+                        <option value="50">Bacon</option>
+                        <option value="40">Mince</option>
+
+                    </select>
+                    <label for="number">Qty of Pizza's</label>
+                        <input type="number" class="form-control" id="number" placeholder="Qty" min="1"
+                            required>
+                            <a href="#summary">
+                                <button type="submit" class="btn btn-success checkout" id="checkout">
+                                    Checkout
+                                </button>
+                            </a>
+        
+
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card" class="pep">
+            <div class="col-sm-3">
+                <div class="card1" class="pep">
                     <img src="img/pizza-on-tray-2714704.jpg">
                     <div>
-                        <figcaption class="text-black">MEDIUM<br>Ksh.500</figcaption>
+                        <figcaption class="text-black" id="size">MEDIUM<br></figcaption>
                     </div>
+                    <select class="custom-select custom-select-md mb-3 flavour" id="type" required>
+                            <option value="type">select type</option>
+                            <option value="500">Veggie</option>
+                            <option value="550">Chicken Tikka</option>
+                            <option value="500">Peri-Peri Chicken</option>
+                            <option value="530">BBQ Steak</option>
+                            <option value="500">Hawaiian</option>
+                            <option value="450">Chicken and Mushroom</option>
+                            <option value="400">Pepperoni</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="crust" required>
+                            <option value="crust">Select crust</option>
+                            <option value="50">Thin Crust</option>
+                            <option value="100">Crispy Crust</option>
+                            <option value="70">Stuffed Crust</option>
+                            <option value="60">Gluten-free Crust</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                            <option value="topping">select topping</option>
+                            <option value="40">Mushroom</option>
+                            <option value="60">Beef Pepperoni</option>
+                            <option value="80">Periperi Chicken</option>
+                            <option value="40">Green Pepper</option>
+                            <option value="40">Olives</option>
+                            <option value="40">Tomato</option>
+                            <option value="50">Onions</option>
+                            <option value="50">Pineapple</option>
+                            <option value="40">Sweet Corn</option>
+                            <option value="50">Bacon</option>
+                            <option value="40">Mince</option>
+                    </select>
+                    <label for="number">Qty of Pizza's</label>
+                        <input type="number" class="form-control" id="number" placeholder="Qty" min="1"
+                            required>
+                            <a href="#summary">
+                                <button type="submit" class="btn btn-success checkout" id="checkout">
+                                    Checkout
+                                </button>
+                            </a>
+        
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
+            <div class="col-sm-3">
+                <div class="card1">
                     <img src="img/pizza-2619967.jpg">
                     <div>
-                        <figcaption class="text-black">REGULAR<br>Ksh.650</figcaption>
+                        <figcaption class="text-black" id="size">REGULAR<br></figcaption>
                     </div>
+                    <select class="custom-select custom-select-md mb-3 flavour" id="type" required>
+                            <option value="type">select type</option>
+                            <option value="650">Veggie</option>
+                            <option value="650">Chicken Tikka</option>
+                            <option value="670">Peri-Peri Chicken</option>
+                            <option value="700">BBQ Steak</option>
+                            <option value="600">Hawaiian</option>
+                            <option value="650">Chicken and Mushroom</option>
+                            <option value="600">Pepperoni</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="crust" required>
+                            <option value="crust">Select crust</option>
+                            <option value="50">Thin Crust</option>
+                            <option value="100">Crispy Crust</option>
+                            <option value="70">Stuffed Crust</option>
+                            <option value="60">Gluten-free Crust</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                            <option value="topping">select topping</option>
+                            <option value="40">Mushroom</option>
+                            <option value="60">Beef Pepperoni</option>
+                            <option value="80">Periperi Chicken</option>
+                            <option value="40">Green Pepper</option>
+                            <option value="40">Olives</option>
+                            <option value="40">Tomato</option>
+                            <option value="50">Onions</option>
+                            <option value="50">Pineapple</option>
+                            <option value="40">Sweet Corn</option>
+                            <option value="50">Bacon</option>
+                            <option value="40">Mince</option>
+                    </select>
+                    <label for="number">Qty of Pizza's</label>
+                        <input type="number" class="form-control" id="number" placeholder="Qty" min="1"
+                            required>
+                            <a href="#summary">
+                                <button type="submit" class="btn btn-success checkout" id="checkout">
+                                    Checkout
+                                </button>
+                            </a>
+        
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
+            <div class="col-sm-3">
+                <div class="card1">
                     <img src="img/sliced-pizza-on-plate-2260208.jpg">
                     <div>
-                        <figcaption class="text-black">LARGE<br>Ksh.750</figcaption>
+                        <figcaption class="text-black">LARGE<br></figcaption>
                     </div>
+                    <select class="custom-select custom-select-md mb-3 flavour" id="type" required>
+                            <option value="type">select type</option>
+                            <option value="900">Veggie</option>
+                            <option value="950">Chicken Tikka</option>
+                            <option value="850">Peri-Peri Chicken</option>
+                            <option value="870">BBQ Steak</option>
+                            <option value="800">Hawaiian</option>
+                            <option value="850">Chicken and Mushroom</option>
+                            <option value="750">Pepperoni</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="crust" required>
+                            <option value="crust">Select crust</option>
+                            <option value="50">Thin Crust</option>
+                            <option value="100">Crispy Crust</option>
+                            <option value="70">Stuffed Crust</option>
+                            <option value="60">Gluten-free Crust</option>
+                    </select>
+                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                            <option value="topping">select topping</option>
+                            <option value="40">Mushroom</option>
+                            <option value="60">Beef Pepperoni</option>
+                            <option value="80">Periperi Chicken</option>
+                            <option value="40">Green Pepper</option>
+                            <option value="40">Olives</option>
+                            <option value="40">Tomato</option>
+                            <option value="50">Onions</option>
+                            <option value="50">Pineapple</option>
+                            <option value="40">Sweet Corn</option>
+                            <option value="50">Bacon</option>
+                            <option value="40">Mince</option>
+                    </select>
+                    <label for="number">Qty of Pizza's</label>
+                        <input type="number" class="form-control" id="number" placeholder="Qty" min="1"
+                            required>
+                            <a href="#sum-order">
+                                <button type="submit" class="btn btn-success checkout" id="checkout">
+                                    Checkout
+                                </button>
+                            </a>
+        
                 </div>
             </div>
 
         </div>
 
-        <div class="orders" id="order">
+        <!-- <div class="orders" id="order">
             <h1 class="text-center" id="order">Your Order Here</h1>
             <div class="form-group row">
                 <div class="col-sm-2"></div>
@@ -147,7 +310,7 @@
                 </div>
                 <div class="col-sm-2"></div>
             </div>
-        </div>
+        </div> -->
 
         <div class="order-summary" id="sum-order">
             <h1 class="text-center" id="summary">Order Summary</h1>

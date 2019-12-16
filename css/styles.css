@@ -133,3 +133,21 @@ nav>ul>li>a:hover {
     .deliver, .delivernot {
         margin: 10px;
     }
+    #card{
+        height: 70%;
+        display: grid;
+    }
+    #card img{
+        width:100%;
+        /* display: inline; */
+    }
+    .row img{
+        width: 100%;
+    }
+    .card{
+        text-align: center;
+        background-color: rgb(243, 115, 11)
+    }
+    .card1{
+        
+    }

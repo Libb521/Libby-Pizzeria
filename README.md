@@ -12,7 +12,7 @@ This is a site that enables a client to order a customized pizza and have the en
 ## Setup.
 To get a local copy of the site:
 
-`git clone (live link)
+`git clone (https://github.com/Libb521/Libby-Pizzeria.github.io)
 
 `Extract` the cloned file.
 

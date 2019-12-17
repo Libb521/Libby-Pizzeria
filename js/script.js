@@ -51,8 +51,11 @@ $(document).ready(function () {
         newTotal = new Total(price, pizzaQty, DeliveryCost);
         if (pizzaPick === 1) {
             alert("Fill in your details in the form below");
+            alert("Your oder is: " + newOrder.fullOrder() + ". see your total bill");
+            alert("your bill is: " + newTotal.finalTotal() + " Thank you for choosing us :-)");
         } else {
             if (pizzaPick === 2) {
+                
                 prompt("Enter location of pizza delivery");
                 alert("Your order has been received and it will be delivered with transport cost of ksh 100.  see order details");
                 alert("Your oder is: " + newOrder.fullOrder() + ". total amount is");

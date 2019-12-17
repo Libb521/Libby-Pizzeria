@@ -5,51 +5,6 @@ body{
     background-attachment: none;
     z-index: -1;
 }
-nav{
-    width: 98.5%;
-    background-color: rgb(240, 104, 13);
-    opacity: 0.5;
-    margin: auto;
-    position: fixed;
-    height: 4%;
-    z-index: 1;
-    top: 0;
-    padding-bottom: 3%;
-    margin-right: 0;
-}
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-nav ul li{
-    display: inline;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0 30px;
-    color: white;
-    cursor: pointer;
-    padding: 40px;
-    text-align: center;
-    margin-right: 40px;
-}
-nav ul li a {
-    color: rgb(47, 4, 75);
-    /* width: 200px; */
-    text-decoration: none;
-    display: inline-block;
-    text-align: right;
-    padding: 15px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-family: 'Amaranth', sans-serif;
-    font-weight: bold;
-    text-shadow: rgb(247, 6, 247);
-}
-nav>ul>li>a:hover {
-    box-shadow: 0 0 10px black, inset 0 0 1px black;
-    background: rgb(240, 132, 10);
-    }
     .intro{
         background: #000 url("../img/close-up-photography-of-pizza-1458426.jpg");
         background-repeat: no-repeat;
@@ -93,7 +48,7 @@ nav>ul>li>a:hover {
     }
     #order{
         padding: 20px 50px 20px 50px;
-        font-family: 'Love Ya Like A Sister', cursive;
+        display: none;
     }
     .checkout {
         border-radius: 15px;
@@ -141,13 +96,18 @@ nav>ul>li>a:hover {
         width:100%;
         /* display: inline; */
     }
-    .row img{
-        width: 100%;
+    .row{
+        width: 150%;
+        display: grid;
+        padding-left: 200px;
+        padding-right: 150px;
+        align-content: center;
     }
+    
     .card{
         text-align: center;
         background-color: rgb(243, 115, 11)
     }
-    .card1{
-        
+    form{
+        align-items: center;
     }
